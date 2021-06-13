@@ -20,6 +20,8 @@ limitations under the License.
 
 # Open
 
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+
 > Open a file.
 
 <section class="installation">
@@ -206,6 +208,18 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[npm-image]: http://img.shields.io/npm/v/@stdlib/fs-open.svg
+[npm-url]: https://npmjs.org/package/@stdlib/fs-open
+
+[test-image]: https://github.com/stdlib-js/fs-open/actions/workflows/test.yml/badge.svg
+[test-url]: https://github.com/stdlib-js/fs-open/actions/workflows/test.yml
+
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/fs-open/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/fs-open?branch=main
+
+[dependencies-image]: https://img.shields.io/david/stdlib-js/fs-open
+[dependencies-url]: https://david-dm.org/stdlib-js/fs-open/main
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
