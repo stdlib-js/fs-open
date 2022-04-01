@@ -1,0 +1,32 @@
+{
+  "name": "@stdlib/fs-open",
+  "version": "0.0.0",
+  "description": "Open a file.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/fs-open.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdfs",
+    "fs",
+    "open",
+    "opensync",
+    "path",
+    "async",
+    "sync",
+    "file",
+    "read",
+    "filesystem"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
