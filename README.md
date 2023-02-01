@@ -24,7 +24,23 @@ limitations under the License.
 
 > Open a file.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/fs-open
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -32,32 +48,8 @@ limitations under the License.
 
 <!-- eslint-disable stdlib/no-redeclare -->
 
-To use in Observable,
-
 ```javascript
-open = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var open = require( 'path/to/vendor/umd/fs-open/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.open;
-})();
-</script>
+var open = require( '@stdlib/fs-open' );
 ```
 
 #### open( path\[, flags\[, mode]], clbk )
@@ -154,12 +146,7 @@ The function has the same default parameters as [`fs.openSync()`][node-fs].
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript">
-(function () {
+```javascript
 var join = require( 'path' ).join;
 var closeSync = require( '@stdlib/fs-close' ).sync;
 var open = require( '@stdlib/fs-open' );
@@ -194,11 +181,6 @@ function onOpen( error, fd ) {
         closeSync( fd );
     }
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -294,11 +276,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/fs/close]: https://github.com/stdlib-js/fs-close/tree/umd
+[@stdlib/fs/close]: https://github.com/stdlib-js/fs-close
 
-[@stdlib/fs/exists]: https://github.com/stdlib-js/fs-exists/tree/umd
+[@stdlib/fs/exists]: https://github.com/stdlib-js/fs-exists
 
-[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file/tree/umd
+[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file
 
 <!-- </related-links> -->
 
