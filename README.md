@@ -195,9 +195,9 @@ function onOpen( error, fd ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/fs/close`][@stdlib/fs/close]</span><span class="delimiter">: </span><span class="description">close a file descriptor.</span>
--   <span class="package-name">[`@stdlib/fs/exists`][@stdlib/fs/exists]</span><span class="delimiter">: </span><span class="description">test whether a path exists on the filesystem.</span>
--   <span class="package-name">[`@stdlib/fs/read-file`][@stdlib/fs/read-file]</span><span class="delimiter">: </span><span class="description">read the entire contents of a file.</span>
+-   <span class="package-name">[`@stdlib/fs-close`][@stdlib/fs/close]</span><span class="delimiter">: </span><span class="description">close a file descriptor.</span>
+-   <span class="package-name">[`@stdlib/fs-exists`][@stdlib/fs/exists]</span><span class="delimiter">: </span><span class="description">test whether a path exists on the filesystem.</span>
+-   <span class="package-name">[`@stdlib/fs-read-file`][@stdlib/fs/read-file]</span><span class="delimiter">: </span><span class="description">read the entire contents of a file.</span>
 
 </section>
 
