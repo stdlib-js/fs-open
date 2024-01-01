@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var closeSync = require( '@stdlib/fs-close' ).sync;
 var pkg = require( './../package.json' ).name;
 var open = require( './../lib' ); // eslint-disable-line stdlib/no-redeclare
