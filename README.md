@@ -35,7 +35,25 @@ limitations under the License.
 
 > Open a file.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/fs-open
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
@@ -44,13 +62,7 @@ limitations under the License.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-import open from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@esm/index.mjs';
+var open = require( '@stdlib/fs-open' );
 ```
 
 #### open( path\[, flags\[, mode]], clbk )
@@ -60,7 +72,7 @@ Asynchronously opens a file.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-var closeSync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-close' ).sync;
+var closeSync = require( '@stdlib/fs-close' ).sync;
 
 open( __filename, onOpen );
 
@@ -82,7 +94,7 @@ Synchronously opens a `file`.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-var closeSync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-close' ).sync;
+var closeSync = require( '@stdlib/fs-close' ).sync;
 
 var fd = open.sync( __filename );
 if ( fd instanceof Error ) {
@@ -123,7 +135,7 @@ The function has the same default parameters as [`fs.openSync()`][node-fs].
     <!-- eslint-disable stdlib/no-redeclare -->
 
     ```javascript
-    import open from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@esm/index.mjs';
+    var open = require( '@stdlib/fs-open' );
 
     var fpath = '/path/to/file.js';
 
@@ -147,15 +159,10 @@ The function has the same default parameters as [`fs.openSync()`][node-fs].
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
+```javascript
 var join = require( 'path' ).join;
-var closeSync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-close' ).sync;
-import open from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@esm/index.mjs';
+var closeSync = require( '@stdlib/fs-close' ).sync;
+var open = require( '@stdlib/fs-open' );
 
 /* Sync */
 
@@ -187,10 +194,6 @@ function onOpen( error, fd ) {
         closeSync( fd );
     }
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -222,7 +225,7 @@ function onOpen( error, fd ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -276,8 +279,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/fs-open/tree/deno
+[deno-readme]: https://github.com/stdlib-js/fs-open/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/fs-open/tree/umd
+[umd-readme]: https://github.com/stdlib-js/fs-open/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/fs-open/tree/esm
+[esm-readme]: https://github.com/stdlib-js/fs-open/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/fs-open/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/fs-open/main/LICENSE
@@ -286,11 +292,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/fs/close]: https://github.com/stdlib-js/fs-close/tree/esm
+[@stdlib/fs/close]: https://github.com/stdlib-js/fs-close
 
-[@stdlib/fs/exists]: https://github.com/stdlib-js/fs-exists/tree/esm
+[@stdlib/fs/exists]: https://github.com/stdlib-js/fs-exists
 
-[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file/tree/esm
+[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file
 
 <!-- </related-links> -->
 
