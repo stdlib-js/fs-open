@@ -44,13 +44,13 @@ limitations under the License.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-import open from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@esm/index.mjs';
+import open from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@esm/index.mjs';
+import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@v0.2.1-esm/index.mjs';
 ```
 
 #### open( path\[, flags\[, mode]], clbk )
@@ -123,7 +123,7 @@ The function has the same default parameters as [`fs.openSync()`][node-fs].
     <!-- eslint-disable stdlib/no-redeclare -->
 
     ```javascript
-    import open from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@esm/index.mjs';
+    import open from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@v0.2.1-esm/index.mjs';
 
     var fpath = '/path/to/file.js';
 
@@ -155,7 +155,7 @@ The function has the same default parameters as [`fs.openSync()`][node-fs].
 
 var join = require( 'path' ).join;
 var closeSync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-close' ).sync;
-import open from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@esm/index.mjs';
+import open from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-open@v0.2.1-esm/index.mjs';
 
 /* Sync */
 
